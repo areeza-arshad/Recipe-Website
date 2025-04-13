@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="menu-btn" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd" class=""><g><path d="M15 20c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 17H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 27zm15 0c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 27 17h-7c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 17 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 20 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 30 27zm-17 0v7a.997.997 0 0 1-1 1H5a.997.997 0 0 1-1-1v-7a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1zm15 0v7a.997.997 0 0 1-1 1h-7a.997.997 0 0 1-1-1v-7a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1zm-2.379-5.207 4.172-4.172a3 3 0 0 0 0-4.242l-4.172-4.172a3 3 0 0 0-4.242 0l-4.172 4.172a3 3 0 0 0 0 4.242l4.172 4.172a3 3 0 0 0 4.242 0zM15 5c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 2H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 5v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 15h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 12zm13.379 4.207-4.172 4.172a1 1 0 0 1-1.414 0l-4.172-4.172a1 1 0 0 1 0-1.414l4.172-4.172a1 1 0 0 1 1.414 0l4.172 4.172a1 1 0 0 1 0 1.414zM13 5v7a.997.997 0 0 1-1 1H5a.997.997 0 0 1-1-1V5a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1z" fill="#3e8e41" opacity="1" data-original="#3e8e41" class=""></path></g></svg>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="https://www.instagram.com/code_withreez"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><linearGradient id="a" x1="42.972" x2="469.039" y1="469.034" y2="42.967" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f5f5dc"></stop><stop offset=".05" stop-color="#f5f5dc"></stop><stop offset=".497" stop-color="#f5f5dc"></stop><stop offset=".95" stop-color="#f5f5dc"></stop><stop offset="1" stop-color="#f5f5dc"></stop></linearGradient><path fill="url(#a)" d="M255.993 124.535c-72.593 0-131.453 58.871-131.453 131.463 0 72.607 58.86 131.453 131.453 131.453 72.607 0 131.477-58.846 131.477-131.453 0-72.592-58.87-131.463-131.477-131.463zm0 216.799c-47.12 0-85.336-38.204-85.336-85.336 0-47.131 38.215-85.335 85.336-85.335 47.131 0 85.346 38.204 85.346 85.335s-38.215 85.336-85.346 85.336zm167.381-221.986c0 16.952-13.757 30.709-30.72 30.709-16.962 0-30.72-13.757-30.72-30.709 0-16.959 13.757-30.72 30.72-30.72s30.72 13.761 30.72 30.72zm75.187-31.035c-6.545-16.842-15.298-31.112-29.521-45.346-28.694-28.715-67.952-39.631-107.484-41.421C334.246.284 325.528.005 255.993.005c-69.511 0-78.229.279-105.539 1.541-39.627 1.794-78.84 12.778-107.481 41.42C14.22 71.719 3.355 110.856 1.537 150.459.293 177.769 0 186.477 0 255.998c0 69.522.293 78.243 1.537 105.564 1.826 39.741 12.672 78.73 41.434 107.471 28.758 28.736 67.883 39.618 107.483 41.431 27.31 1.248 36.028 1.53 105.539 1.53 69.536 0 78.254-.283 105.564-1.53 39.692-1.818 78.78-12.709 107.481-41.431 28.682-28.703 39.626-67.956 41.421-107.472 1.248-27.32 1.541-36.042 1.541-105.564s-.293-78.229-1.541-105.539c-1.237-27.255-5.566-45.857-11.898-62.145zm-34.183 271.132c-1.264 27.805-7.724 56.727-27.955 76.983-20.498 20.524-48.99 26.682-76.969 27.958-27.002 1.223-35.088 1.491-103.461 1.491-68.348 0-76.434-.269-103.438-1.491-28.05-1.279-56.497-7.54-76.978-27.955-20.422-20.356-26.707-49.199-27.958-76.987-1.223-26.988-1.491-35.084-1.491-103.447 0-68.348.269-76.444 1.491-103.448 1.247-27.677 7.832-56.811 27.954-76.967 20.402-20.436 49.145-26.689 76.984-27.959 27.002-1.233 35.088-1.491 103.436-1.491 68.363 0 76.459.258 103.462 1.491 28.034 1.279 56.528 7.511 76.965 27.955 20.447 20.454 26.69 49.089 27.958 76.973 1.237 27.002 1.506 35.098 1.506 103.447-.001 68.363-.269 76.459-1.506 103.447z" opacity="1" data-original="url(#a)" class=""></path></g></svg></a></li>
+                <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M353.701 0H55.087C24.665 0 .002 24.662.002 55.085v298.616c0 30.423 24.662 55.085 55.085 55.085h147.275l.251-146.078h-37.951a8.954 8.954 0 0 1-8.954-8.92l-.182-47.087a8.955 8.955 0 0 1 8.955-8.989h37.882v-45.498c0-52.8 32.247-81.55 79.348-81.55h38.65a8.955 8.955 0 0 1 8.955 8.955v39.704a8.955 8.955 0 0 1-8.95 8.955l-23.719.011c-25.615 0-30.575 12.172-30.575 30.035v39.389h56.285c5.363 0 9.524 4.683 8.892 10.009l-5.581 47.087a8.955 8.955 0 0 1-8.892 7.901h-50.453l-.251 146.078h87.631c30.422 0 55.084-24.662 55.084-55.084V55.085C408.786 24.662 384.124 0 353.701 0z" fill="#f5f5dc" data-original="#475993" class=""></path></g></svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M5 21.75a1.81 1.81 0 0 1-.78-.18 1.74 1.74 0 0 1-1-1.57V3A1.76 1.76 0 0 1 5 1.25h14A1.76 1.76 0 0 1 20.75 3v17A1.75 1.75 0 0 1 18 21.4l-5.8-4.35a.24.24 0 0 0-.3 0L6.05 21.4a1.77 1.77 0 0 1-1.05.35zm0-19a.25.25 0 0 0-.25.25v17a.24.24 0 0 0 .14.22.23.23 0 0 0 .26 0L11 15.85a1.77 1.77 0 0 1 2.1 0l5.8 4.35a.23.23 0 0 0 .26 0 .24.24 0 0 0 .14-.22V3a.25.25 0 0 0-.3-.25z" data-name="Layer 2" fill="#f5f5dc" opacity="1" data-original="#f5f5dc" class=""></path></g></svg></a></li>
+                
+            </ul>
+        </nav>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="title">Recipify</div>
+
+            <div class="text-container" id="searchBtn">
+                <div class="input-area">Search</div>
+                <div class="magnifying-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </div>
+     <!-- RECIPE SECTION -->
+    <div class="recipe-section" id="recipeSec">
+        <div class="text-section">
+            <div class="back-arrow">
+                <i class="fa-solid fa-arrow-left" id="backArrow"></i>
+            </div>
+            <div class="center-logo">Recipify</div>
+            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="input-container">
+            <div class="search-area">
+                <input type="text" id="textArea" placeholder="Search for recipe...">
+            </div>
+            <div class="send-btn" id="sendBtn"><i class="fa-solid fa-paper-plane"></i></div>
+        </div>
+        <div class="recipe-container" id="recipeContainer">
+                <!-- <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div>
+                <div class="recipe-box">
+                    <img src="about-page.png" alt="">
+                    <h1 class="recipe-name">name</h1>
+                    <p class="recipe-area">Area</p>
+                    <p class="recipe-category">category</p>
+                    <button class="viewbtn"><a href="#">view more</a></button>
+                </div> -->
+        </div>
+        <div class="recipe-details">
+            <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="recipe-content" id="recipeContent"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
